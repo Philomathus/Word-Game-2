@@ -1,0 +1,300 @@
+/*If screen.width/screen.height <= 1, then the display is going to suck--I'm pertaining to mobile devices on portrait mode. I will add code that enforces the goldilocks ratio by prompting the user to switch to landscape mode.*/
+
+* {
+
+	box-sizing: border-box;
+	background-color: white;
+	color: gray;
+	margin: 0;
+	
+}
+
+body {
+
+	font-family: sans-serif;
+	overflow: hidden;
+	font-size: 7vw;
+
+}
+
+.page {
+
+	transition: transform 2.5s;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.row {
+
+	position: relative;
+	width: 100vw;
+    height: 33.33vh;
+	
+}
+
+.z-index-context {
+
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    
+}
+
+#start-button, #replay, #score {
+
+	border: 1vw solid;
+	border-radius: 20px;
+	padding: 0 0.5vw 0 0.5vw;
+	height: 23vh;
+	line-height: 20vh;
+
+}
+
+h2 {
+
+	transition: color 0.5s, border-color 0.5s;
+	border-color: gray;
+
+}
+
+.settings-sensors {
+	
+	position: relative;
+	height: 10vh;
+	width: 20vw;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	
+}
+
+#left-sensor {
+
+	float: left;
+	font-size: 25vh;
+		
+}
+
+#right-sensor {
+
+	float: right;
+	font-size: 20vh;
+
+}
+
+#left-sensor div {
+
+	line-height: 27.25vh;
+
+}
+
+#right-sensor div {
+
+	line-height: 25vh;
+
+}
+
+.settings-game-tab-buttons  {
+	
+	text-align: center;
+	width: 25vh;
+	height: 30vh;
+	border: 0.75vw solid;
+	border-radius: 35%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: top 0.5s, border-color 1s;
+	top: -300%;
+	border-color: white;
+
+}
+
+.settings-game-tab-buttons span { /*icon container*/
+
+	display: inline-block;
+	border-radius: 100%;
+	transition: transform 2s, color 0.5s;
+
+}
+
+.cell-container {
+
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	
+} 
+
+.cell {
+
+	float: left;
+	padding: 2.5px;
+	
+
+}
+
+.life {
+		
+	width: 13vw;
+	height: 22.43vh;
+
+}
+
+.letter {
+	
+	width: 8.5vw;
+	height: 15vh;
+
+}
+
+.word {
+
+	width: 7.75vw;
+	height: 14.9vh;
+	display: none;
+
+}
+
+p {
+
+	width: 100%;
+	height: 100%;
+	border: 1vw solid;
+	border-color: gray;
+	border-radius: 40%;
+	text-align: center;
+	color: white;
+
+}
+
+.life p {
+
+	font-size: 5vw;
+	line-height: 17vh;
+	font-weight: bold;
+	font-size: 7.5vw;
+	transition: color 0.5s;
+
+}
+
+.letter p {
+
+	font-size: 5vw;
+	line-height: 11vh;
+	transition: color 0.5s;
+
+}
+
+.word p {
+
+	font-size: 4.5vw;
+	line-height: 10.5vh;
+	
+}
+
+.trigger {
+
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 7.5vw;
+	height: 100%;
+    left: 100%;
+
+}
+
+.game-tab-buttons {
+	
+	position: relative;
+	transform: translateY(20%);
+    right: 8vw;
+	width: 8vw;
+	height:75%;
+	border: 0.75vw solid gray;
+	border-color: white;
+	border-radius: 35%;
+	transition: right 0.5s, border-color 1.25s ;
+	
+}
+
+.game-tab-buttons span {
+
+	font-weight: bold;
+	font-size: 4.5vw;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	transition: color 1.5s !Important;
+	background-color: rgba(0, 0, 0, 0);
+
+}
+
+#start-hood {
+
+	z-index: 1;
+	top: 0;
+
+}
+
+#start-tab {
+
+	top: 0;
+
+}
+
+#start-hood, #option-tab {
+
+	height: 66.66vh;
+	
+}
+
+#blocker-card {
+
+	opacity: 0;
+	height: 66.66vh;
+	bottom: 0;
+
+}
+
+#game-tab, #tally-card {
+
+	transition-duration: 2.5s;
+	transition-timing-function: ease-in-out;
+
+}
+
+#tally-card {
+
+	position: relative;
+	transform: rotate(180deg);	
+	transform-origin: 50% 100%;	
+
+}
+
+#tally-card h1, #tally-card h3 {
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+#tally-card h1 {
+	
+	top: 20vh;
+
+}
+
+#tally-card h3 {
+
+	bottom: 25vh;
+
+}

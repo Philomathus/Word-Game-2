@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset='utf-8'>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Word Game Build2</title>
+		
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<link rel='stylesheet' href='css/animation.css'>
+
+</head>
+
+<body>
+
+<div class='page' id='game-tab'> 
+
+	<div class='row'> 	
+	
+		<div class='z-index-context'>
+		
+			<div class='cell-container'>
+			
+				<div class='life cell'><p>&#128128</p></div>
+				<div class='life cell'><p>&#128128</p></div>
+				<div class='life cell'><p>&#128128</p></div>
+				
+			</div>
+			
+			<div class='trigger'><div class='game-tab-buttons'><span>&#10132</span></div></div>
+			
+		</div>
+
+	</div>
+	
+	<div class='row'>
+	
+		<div class='z-index-context'>
+		
+			<div class='cell-container'>
+			
+				<div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div> 
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div> 
+				</div>	
+				
+				<div>
+					<div class='letter cell'><p></p></div> 
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div> 
+					<div class='letter cell'><p></p></div>
+					<div class='letter cell'><p></p></div> 
+				</div>
+				
+			</div>
+			
+			<div class='trigger active'><div class='game-tab-buttons'><span>&#8634</span></div></div>
+		
+		</div>
+	
+	</div>
+	
+	<div class='row'>
+	
+		<div class='z-index-context'>
+		
+			<div class='cell-container'>
+			
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				<div class='word cell'><p></p></div>
+				
+			</div>
+			
+			<!--
+				***I've decided to remove the hint button***
+				<div class='trigger active'><div class='game-tab-buttons'><span>?</span></div></div>
+			
+			-->
+		
+		</div>
+	
+	</div>
+	
+</div>
+
+<div class='page' id='tally-card'>
+	
+	<h1>WINNER</h1>
+	
+	<h3 id='replay'>REPLAY</h3>
+
+</div>
+
+<div class='page' id='blocker-card'></div>
+
+<div class='page' id='start-tab'>
+
+	<div class='page' id='start-hood'> 
+
+		<div class='row'>
+	
+			<div class='z-index-context'>
+		
+				<h1>WORD&nbsp;GAME</h1>
+		
+			</div>	
+	
+		</div>
+
+		<div class='row'>
+	
+			<div class='z-index-context'>
+		
+				<h2 id='start-button'>START</h2>
+		
+			</div>	
+	
+		</div>
+
+	</div>
+
+	<div id='option-tab'>
+	
+		<div class='row'>
+	
+			<div class='z-index-context'><h2>HELP</h2></div>
+	
+		</div>
+
+		<div class='row'>
+	
+			<div class='z-index-context'><h2>CUSTOM GAME</h2></div>
+	
+		</div>
+		
+	</div>
+	
+	<div class='row'>
+	
+		<div class='settings-sensors' id='left-sensor'><div class='settings-game-tab-buttons'><span>⚙</span></div></div>
+		
+		<div class='settings-sensors' id='right-sensor'><div class='settings-game-tab-buttons'><span>🔘</span></div></div>
+		
+	</div>
+	
+</div>
+
+
+	<script src='js/animation.js'></script>
+	<script src='js/index.js'></script>
+
+</body>
+
+</html>

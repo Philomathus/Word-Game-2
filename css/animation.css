@@ -1,0 +1,79 @@
+
+#start-button:hover {
+
+	border-color: #999; 
+
+}
+
+h2:hover, .letter p:hover {
+
+	color: #999 !Important;
+
+}
+
+.sensor-active div {
+
+	border-color: gray;
+
+}
+
+.sensor-active:hover div {
+
+	top: 5%;	
+	transition-delay: 0.25s;
+
+}
+
+.rotate-settings-button {
+
+	transform: rotate(-90deg);
+	
+}
+
+.moveUp {
+
+	transform: translateY(-100%);
+
+}
+
+.moveDown {
+
+	transform: translateY(100%);
+
+}
+
+.active:hover div {
+
+	border-color: gray;
+	right: -10%;
+	transition-delay: 0.25s;
+
+}
+
+.active:hover div span {
+
+	color: gray;
+	transition-delay: 0.25s;
+
+} 
+
+.moveRight {
+
+	border-color: gray;
+	right: -10%;
+
+}
+
+.font-visible {
+	
+	transition: color 0.5s;
+	color: gray !Important;
+
+}
+
+.show-word-cell {
+
+	display: initial !Important;
+
+}
+
